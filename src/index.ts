@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import { handlingsRouter } from './controllers/handlings/handlings.routes';
 dotenv.config();
 
-const app: Application = express();
+export const app: Application = express();
 const PORT = process.env.PORT ?? 3000;
 
 app.use(express.json());
